@@ -1,22 +1,24 @@
 FROM php:8.2-cli
 
-# Instala extensiones necesarias
 RUN apt-get update && apt-get install -y \
-    git unzip zip libicu-dev libonig-dev libzip-dev libpq-dev \
+    git unzip zip curl libicu-dev libonig-dev libzip-dev libpq-dev \
     && docker-php-ext-install intl pdo pdo_mysql zip
 
-# Instala Composer
+# Instalar Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
-# Copia tu proyecto
-WORKDIR /app
-COPY . /app
+# Instalar Symfony CLI para que funcione symfony-cmd
+RUN curl -sS https://get.symfony.com/cli/installer | bash && \
+    mv /root/.symfony*/bin/symfony /usr/local/bin/symfony
 
-# Instala dependencias
+WORKDIR /app
+
+COPY composer.json composer.lock ./
+
 RUN composer install --no-dev --optimize-autoloader
 
-# Expone el puerto para PHP server
+COPY . .
+
 EXPOSE 8000
 
-# Comando por defecto
 CMD ["php", "-S", "0.0.0.0:8000", "-t", "public"]
