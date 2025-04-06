@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebc88742-f35b-40f0-b45b-77a00fa35b54" name="Changes" comment="Refactor Dockerfile to set environment variables for production and optimize Composer installation">
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/render.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/render.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +209,7 @@
       <workItem from="1743935022454" duration="1985000" />
       <workItem from="1743937045400" duration="1934000" />
       <workItem from="1743939058684" duration="243000" />
-      <workItem from="1743939411830" duration="4289000" />
+      <workItem from="1743939411830" duration="4783000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project files including Composer configuration and runtime components">
       <option name="closed" value="true" />
@@ -394,7 +395,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743943701142</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Refactor Dockerfile to set environment variables for production and optimize Composer installation">
+      <option name="closed" value="true" />
+      <created>1743946608404</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1743946608404</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
