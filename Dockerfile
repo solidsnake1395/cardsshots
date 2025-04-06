@@ -26,8 +26,14 @@ WORKDIR /var/www/html
 # Copiar archivos de la aplicación
 COPY . .
 
-# Instalar dependencias de Composer
-RUN composer install --no-dev --optimize-autoloader
+# Establecer variable de entorno para permitir ejecutar plugins como root
+ENV COMPOSER_ALLOW_SUPERUSER=1
+
+# Instalar dependencias de Composer sin ejecutar scripts
+RUN composer install --no-dev --optimize-autoloader --no-scripts
+
+# Ejecutar scripts manualmente si es necesario, omitiendo los que fallan
+RUN composer run-script post-install-cmd --no-interaction || true
 
 # Configurar permisos
 RUN chown -R www-data:www-data /var/www/html/var

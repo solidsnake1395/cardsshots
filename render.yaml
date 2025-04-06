@@ -1,13 +1,26 @@
 services:
   - type: web
-    name: symfony-render-app
+    name: symfony-app
+    env: docker
+    region: oregon
     dockerfilePath: ./Dockerfile
-    plan: free
+    dockerContext: .
+    plan: starter
+    numInstances: 1
+    healthCheckPath: /
     envVars:
       - key: APP_ENV
         value: prod
       - key: APP_SECRET
-        value: 425812b0ef16a08cfd251b4ac861a4c8
+        sync: false
       - key: DATABASE_URL
-        value: postgresql://root:ONySL36hkQ5bywATYlM1jK1Z4wySP5WR@dpg-cvo2jlc9c44c73bhmvb0-a/cardsnshots
-    runtime: docker
+        fromDatabase:
+          name: symfony-db
+          property: connectionString
+      - key: COMPOSER_ALLOW_SUPERUSER
+        value: 1
+
+databases:
+  - name: symfony-db
+    plan: starter
+    region: oregon
