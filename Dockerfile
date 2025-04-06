@@ -32,11 +32,14 @@ ENV COMPOSER_ALLOW_SUPERUSER=1
 # Instalar dependencias de Composer sin ejecutar scripts
 RUN composer install --no-dev --optimize-autoloader --no-scripts
 
+# Crear el directorio var si no existe
+RUN mkdir -p var/cache var/log
+
 # Ejecutar scripts manualmente si es necesario, omitiendo los que fallan
 RUN composer run-script post-install-cmd --no-interaction || true
 
 # Configurar permisos
-RUN chown -R www-data:www-data /var/www/html/var
+RUN chmod -R 777 var
 
 # Exponemos el puerto 80
 EXPOSE 80
