@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebc88742-f35b-40f0-b45b-77a00fa35b54" name="Changes" comment="Rename .dockerfile to Dockerfile for consistency">
+    <list default="true" id="ebc88742-f35b-40f0-b45b-77a00fa35b54" name="Changes" comment="Add initial project configuration files including Dockerfile, vcs.xml, phpunit.xml, and render.yaml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,12 +25,12 @@
     &quot;assignee&quot;: &quot;solidsnake1395&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:solidsnake1395/cardsshots.git",
-    "accountId": "f44c7d5e-3a86-4b99-adcc-f72a6ecc3796"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:solidsnake1395/cardsshots.git&quot;,
+    &quot;accountId&quot;: &quot;f44c7d5e-3a86-4b99-adcc-f72a6ecc3796&quot;
   }
-}]]></component>
+}</component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
@@ -208,6 +208,7 @@
       <workItem from="1743935022454" duration="1985000" />
       <workItem from="1743937045400" duration="1934000" />
       <workItem from="1743939058684" duration="243000" />
+      <workItem from="1743939411830" duration="472000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project files including Composer configuration and runtime components">
       <option name="closed" value="true" />
@@ -281,17 +282,37 @@
       <option name="project" value="LOCAL" />
       <updated>1743939189264</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add initial project configuration files including Dockerfile, vcs.xml, phpunit.xml, and render.yaml">
+      <option name="closed" value="true" />
+      <created>1743939436722</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1743939436722</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add initial project files including Composer configuration and runtime components" />
     <MESSAGE value="Add Docker configuration and Nginx setup for Symfony application" />
     <MESSAGE value="Rename .dockerfile to .Dockerfile for consistency" />
     <MESSAGE value="Rename .dockerfile to Dockerfile for consistency" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename .dockerfile to Dockerfile for consistency" />
+    <MESSAGE value="Add initial project configuration files including Dockerfile, vcs.xml, phpunit.xml, and render.yaml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add initial project configuration files including Dockerfile, vcs.xml, phpunit.xml, and render.yaml" />
   </component>
 </project>
