@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class TestDbController
 {
-#[Route('/test-db', name: 'test_db')]
+#[Route('/test-db')]
 public function test(Connection $connection): Response
 {
 try {
