@@ -1,37 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+  <component name="MessDetectorOptionsConfiguration">
+    <option name="transferred" value="true" />
   </component>
-  <component name="ChangeListManager">
-    <list default="true" id="ebc88742-f35b-40f0-b45b-77a00fa35b54" name="Changes" comment="Rename .dockerfile to Dockerfile for consistency">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
+  <component name="PHPCSFixerOptionsConfiguration">
+    <option name="transferred" value="true" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
-    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+  <component name="PHPCodeSnifferOptionsConfiguration">
+    <option name="highlightLevel" value="WARNING" />
+    <option name="transferred" value="true" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;solidsnake1395&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:solidsnake1395/cardsshots.git",
-    "accountId": "f44c7d5e-3a86-4b99-adcc-f72a6ecc3796"
-  }
-}]]></component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
+  <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
@@ -160,138 +139,16 @@
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
     </include_path>
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2vLr6jbTOaANq7VgEGavbdyDe2V" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />
+  <component name="PhpStanOptionsConfiguration">
+    <option name="transferred" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/aitor/proyectos/CardsAndShots&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
-  <component name="RunManager">
-    <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml.dist" scope="XML" use_alternative_configuration_file="true" />
-      <method v="2" />
-    </configuration>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/phpunit.xml.dist" custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" use_configuration_file="true" />
+    </phpunit_settings>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PS-243.26053.13" />
-        <option value="bundled-php-predefined-a98d8de5180a-1ec7b7818973-com.jetbrains.php.sharedIndexes-PS-243.26053.13" />
-      </set>
-    </attachedChunks>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="ebc88742-f35b-40f0-b45b-77a00fa35b54" name="Changes" comment="" />
-      <created>1743935021399</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1743935021399</updated>
-      <workItem from="1743935022454" duration="1985000" />
-      <workItem from="1743937045400" duration="1934000" />
-      <workItem from="1743939058684" duration="243000" />
-    </task>
-    <task id="LOCAL-00001" summary="Add initial project files including Composer configuration and runtime components">
-      <option name="closed" value="true" />
-      <created>1743935531065</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1743935531065</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Add initial project files including Composer configuration and runtime components">
-      <option name="closed" value="true" />
-      <created>1743935558878</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1743935558878</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Add Docker configuration and Nginx setup for Symfony application">
-      <option name="closed" value="true" />
-      <created>1743936361967</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1743936361967</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Rename .dockerfile to .Dockerfile for consistency">
-      <option name="closed" value="true" />
-      <created>1743936460911</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1743936460911</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Rename .dockerfile to .Dockerfile for consistency">
-      <option name="closed" value="true" />
-      <created>1743936698699</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1743936698699</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Rename .dockerfile to .Dockerfile for consistency">
-      <option name="closed" value="true" />
-      <created>1743937498504</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1743937498504</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Rename .dockerfile to .Dockerfile for consistency">
-      <option name="closed" value="true" />
-      <created>1743937709953</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1743937709953</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Rename .dockerfile to Dockerfile for consistency">
-      <option name="closed" value="true" />
-      <created>1743937876919</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1743937876919</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Rename .dockerfile to Dockerfile for consistency">
-      <option name="closed" value="true" />
-      <created>1743939189264</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1743939189264</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add initial project files including Composer configuration and runtime components" />
-    <MESSAGE value="Add Docker configuration and Nginx setup for Symfony application" />
-    <MESSAGE value="Rename .dockerfile to .Dockerfile for consistency" />
-    <MESSAGE value="Rename .dockerfile to Dockerfile for consistency" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename .dockerfile to Dockerfile for consistency" />
+  <component name="PsalmOptionsConfiguration">
+    <option name="transferred" value="true" />
   </component>
 </project>

@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: symfony-render-app
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: APP_ENV
+        value: prod
+      - key: APP_SECRET
+        value: castillo
+      - key: DATABASE_URL
+        value: postgresql://root:ONySL36hkQ5bywATYlM1jK1Z4wySP5WR@dpg-cvo2jlc9c44c73bhmvb0-a/cardsnshots
