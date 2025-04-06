@@ -26,20 +26,22 @@ WORKDIR /var/www/html
 # Copiar archivos de la aplicación
 COPY . .
 
-# Establecer variable de entorno para permitir ejecutar plugins como root
+# Establecer variables de entorno
 ENV COMPOSER_ALLOW_SUPERUSER=1
+ENV APP_ENV=prod
+ENV APP_DEBUG=0
 
-# Instalar dependencias de Composer sin ejecutar scripts
+# Instalar dependencias de Composer
 RUN composer install --no-dev --optimize-autoloader --no-scripts
 
 # Crear el directorio var si no existe
 RUN mkdir -p var/cache var/log
 
-# Ejecutar scripts manualmente si es necesario, omitiendo los que fallan
-RUN composer run-script post-install-cmd --no-interaction || true
-
 # Configurar permisos
 RUN chmod -R 777 var
+
+# Limpiar caché manualmente para el entorno de producción
+RUN php bin/console cache:clear --env=prod --no-debug || true
 
 # Exponemos el puerto 80
 EXPOSE 80
