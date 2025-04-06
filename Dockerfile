@@ -1,30 +1,39 @@
-FROM php:8.2-cli
+FROM php:8.2-apache
 
-# Instalar dependencias necesarias
+# Instalar dependencias
 RUN apt-get update && apt-get install -y \
-    git unzip zip curl libicu-dev libonig-dev libzip-dev libpq-dev \
-    && docker-php-ext-install intl pdo pdo_mysql zip
+    libicu-dev \
+    libzip-dev \
+    unzip \
+    git \
+    && docker-php-ext-install \
+    pdo_mysql \
+    intl \
+    zip
+
+# Configurar Apache
+ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
+RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
+RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
+RUN a2enmod rewrite
 
 # Instalar Composer
-COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Instalar Symfony CLI (para auto-scripts)
-RUN curl -sS https://get.symfony.com/cli/installer | bash \
-    && mv /root/.symfony*/bin/symfony /usr/local/bin/symfony
+# Configurar directorio de trabajo
+WORKDIR /var/www/html
 
-# Establecer directorio de trabajo
-WORKDIR /app
-
-# ⛔ Ya no hagas "composer install" acá todavía...
-
-
+# Copiar archivos de la aplicación
 COPY . .
 
-# ✅ Ahora sí: ejecutar composer con permisos root
-RUN COMPOSER_ALLOW_SUPERUSER=1 composer install --no-dev --optimize-autoloader
+# Instalar dependencias de Composer
+RUN composer install --no-dev --optimize-autoloader
 
-# Exponer puerto
-EXPOSE 8000
+# Configurar permisos
+RUN chown -R www-data:www-data /var/www/html/var
 
-# Comando para iniciar
-CMD ["php", "-S", "0.0.0.0:8000", "-t", "public"]
+# Exponemos el puerto 80
+EXPOSE 80
+
+# Comando de inicio
+CMD ["apache2-foreground"]
