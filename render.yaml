@@ -10,7 +10,7 @@ services:
     healthCheckPath: /
     envVars:
       - key: APP_ENV
-        value: prod
+        value: dev
       - key: APP_SECRET
         sync: false
       - key: DATABASE_URL
