@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebc88742-f35b-40f0-b45b-77a00fa35b54" name="Changes" comment="Refactor Dockerfile to optimize composer install command" />
+    <list default="true" id="ebc88742-f35b-40f0-b45b-77a00fa35b54" name="Changes" comment="Refactor Dockerfile to improve dependency installation order and enable root permissions for Composer">
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,7 +208,7 @@
       <workItem from="1743935022454" duration="1985000" />
       <workItem from="1743937045400" duration="1934000" />
       <workItem from="1743939058684" duration="243000" />
-      <workItem from="1743939411830" duration="1679000" />
+      <workItem from="1743939411830" duration="1992000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project files including Composer configuration and runtime components">
       <option name="closed" value="true" />
@@ -328,7 +330,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743940893393</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Refactor Dockerfile to optimize composer install command">
+      <option name="closed" value="true" />
+      <created>1743941191332</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1743941191332</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Refactor Dockerfile to improve dependency installation order and enable root permissions for Composer">
+      <option name="closed" value="true" />
+      <created>1743941403149</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1743941403149</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +372,7 @@
     <MESSAGE value="Add Docker configuration and .dockerignore for Symfony application" />
     <MESSAGE value="Update .dockerignore to remove unnecessary entries" />
     <MESSAGE value="Refactor Dockerfile to optimize composer install command" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor Dockerfile to optimize composer install command" />
+    <MESSAGE value="Refactor Dockerfile to improve dependency installation order and enable root permissions for Composer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor Dockerfile to improve dependency installation order and enable root permissions for Composer" />
   </component>
 </project>
