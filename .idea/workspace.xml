@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebc88742-f35b-40f0-b45b-77a00fa35b54" name="Changes" comment="Update .dockerignore to remove unnecessary entries">
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-    </list>
+    <list default="true" id="ebc88742-f35b-40f0-b45b-77a00fa35b54" name="Changes" comment="Update .dockerignore to remove unnecessary entries" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -208,7 +206,7 @@
       <workItem from="1743935022454" duration="1985000" />
       <workItem from="1743937045400" duration="1934000" />
       <workItem from="1743939058684" duration="243000" />
-      <workItem from="1743939411830" duration="975000" />
+      <workItem from="1743939411830" duration="1295000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project files including Composer configuration and runtime components">
       <option name="closed" value="true" />
@@ -306,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743940386501</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Update .dockerignore to remove unnecessary entries">
+      <option name="closed" value="true" />
+      <created>1743940574897</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1743940574897</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
