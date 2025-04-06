@@ -12,7 +12,7 @@ services:
       - key: APP_ENV
         value: dev
       - key: APP_SECRET
-        sync: false
+        value: cd4d7e9398b343c2845fd03f8a72b9b179af8c4e8e49f3e4f77a2f149fd7a4fa
       - key: DATABASE_URL
         fromDatabase:
           name: symfony-db
