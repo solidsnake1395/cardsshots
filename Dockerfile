@@ -32,7 +32,7 @@ ENV APP_ENV=prod
 ENV APP_DEBUG=0
 
 # Instalar dependencias de Composer
-RUN composer install --no-dev --optimize-autoloader --no-scripts
+RUN composer install --no-dev --optimize-autoloader
 
 # Crear el directorio var si no existe
 RUN mkdir -p var/cache var/log
